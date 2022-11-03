@@ -9,7 +9,7 @@ const Dashchart3 = () => {
   const COLORS = [ '#FFBB28', '#FF8042'];
   return (
     <div className='dashchart33'>
-       <div className="chartheadcont">
+       <div className="chartheadcont dash33">
           <p className="charthead">
             Users
           </p>
@@ -39,15 +39,10 @@ const Dashchart3 = () => {
             value,
             index
           }) => {
-            console.log("handling label?");
             const RADIAN = Math.PI / 180;
-            // eslint-disable-next-line
             const radius = 25 + innerRadius + (outerRadius - innerRadius);
-            // eslint-disable-next-line
             const x = cx + radius * Math.cos(-midAngle * RADIAN);
-            // eslint-disable-next-line
             const y = cy + radius * Math.sin(-midAngle * RADIAN);
-  
             return (
               <text
                 x={x}

@@ -1,13 +1,26 @@
 import React, { useState } from 'react';
 import"../Css/dashboard.css";
-import { BsFillPeopleFill } from "react-icons/bs";
 import { TiGroup,TiStar } from "react-icons/ti";
-import { BsCart4,BsCalculator,BsCurrencyDollar,BsFillGrid3X3GapFill} from "react-icons/bs";
+import { BsCart4,BsCalculator,BsCurrencyDollar,BsFillGrid3X3GapFill, BsJustify} from "react-icons/bs";
 import DashChart1 from './DashChart1';
 import DashChart2 from './DashChart2';
 import Dashchart3 from './Dashchart3';
+import product1 from "../Images/cloth1.jpg";
+import product2 from "../Images/model2.jpg";
+import product3 from "../Images/model3.jpg";
+import product4 from "../Images/model4.jpg";
+import product5 from "../Images/model5.jpg";
+import Datatabledashboard from './Datatabledashboard';
 
 const Dashboard = () => {
+  
+  const topusersdata=[
+    {"Image":product1,"Itemname":"clothes1","Category":"Men","Orders":"25.2%"},
+    {"Image":product2,"Itemname":"clothes1","Category":"Women","Orders":"35.2%"},
+    {"Image":product3,"Itemname":"clothes1","Category":"Men","Orders":"45.2%"},
+    {"Image":product4,"Itemname":"clothes1","Category":"Men","Orders":"55.2%"},
+    {"Image":product5,"Itemname":"clothes1","Category":"Men","Orders":"65.2%"}
+  ];
 
   const [first, setfirst] = useState(96);
   const [second, setsecond] = useState(49);
@@ -77,9 +90,35 @@ const Dashboard = () => {
         
         <div className="division3 divi2">
             <div className="mainchart"><Dashchart3/></div>
-            <div className="useritems"></div>
+            <div className="useritems">
+              <p className="charthead">Top 5 users</p>
+              <div  className="itemusercont">
+                  <div className='itemfront2'>Image</div> 
+                  <div className='itemfront1'>Itemname</div>
+                  <div className='itemfront1'>Category</div>
+                  <div className='itemfront1'>Orders</div>
+              </div>
+              {topusersdata.map(function(element,index){
+                  console.log(element.Image);
+                  console.log(index);
+                  return(
+                  <div key={index} style={{display:"flex"}} className="usercontss" >
+                    <div className='itemfront3'>
+                    <img src={element.Image} width="50px"/>
+                    </div>
+                    <div className='itemfront'>{element.Itemname}</div>
+                    <div className='itemfront'>{element.Category}</div>
+                    <div className='itemfront'>{element.Orders}</div>
+                  </div>
+                  )
+              })}
+            </div>
         </div>
-
+        <div className="divi21">
+          <div className="division22">
+            <Datatabledashboard/>
+          </div>
+        </div>
         <div className="division3">
             <DashChart2/>
         </div>
