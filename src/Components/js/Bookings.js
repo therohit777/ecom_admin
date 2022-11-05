@@ -1,9 +1,14 @@
 import React from 'react';
 import "../Css/bookings.css";
+import DatatableBookings from './DatatableBookings';
 
 const Bookings = () => {
   return (
-    <div>Bookings</div>
+    <div className='booking'>
+      <div className="bookingcont">
+        <DatatableBookings/>
+      </div>
+    </div>
   )
 }
 

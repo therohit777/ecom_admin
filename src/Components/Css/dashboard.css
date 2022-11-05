@@ -205,3 +205,102 @@
     margin-top: 50px;
     border-radius: 20px;
 }
+.promobtn{
+    padding: 12px 30px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    border:none;
+    background-color: #4004b7;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+.promocont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.datatablepromo{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding-top: 20px ;
+    width: 90%;
+    padding-bottom: 20px;
+}
+.promohead{
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+.promocontes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.promoinputs{
+    background-color: #ffffff;
+    width: 65%;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.promoheades{
+    width: 15%;
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.inputfields{
+    width: 85%;
+}
+.selectheads{
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 2px;
+    margin-left: 2px;
+    text-align: center;
+}
+.selectheads2{
+    margin-left: 10px;
+    width: 98%;
+}
+.inputfield1{
+    padding: 12px 0px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    text-align: center;
+}
+.inputcont1{
+    display: flex;
+    margin-top: 35px;
+}
+.selectcontes{
+    width: 100%;
+}
+.typecont{
+    display: flex;
+}
+.pbtnsd{
+    padding: 12px 30px;
+    font-size: 15px;
+    border:none;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.save{
+    background-color: #4004b7;
+    color: #ffffff;
+}
+.cancel{
+    background-color: #665f5f;
+    color: #ffffff;
+}

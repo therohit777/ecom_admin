@@ -4,16 +4,14 @@ import { MdViewHeadline, MdPowerSettingsNew } from "react-icons/md";
 import { BsCart4, BsFillBellFill} from "react-icons/bs";
 import Dashboard from './Dashboard';
 import Bookings from './Bookings';
-import Addons from './Addons';
-import Banners from './Banners';
 import Categories from './Categories';
 import Delivery from './Delivery';
-import Items from './Items';
 import Orders from './Orders';
-import Payment from './Payment';
 import Review from './Review';
-import Study from './Study';
 import {useNavigate} from "react-router-dom";
+import Report from './Report';
+import Promocodes from './Promocodes';
+import Notifications from './Notifications';
 
 const Adminhome = () => {
   const [dashboard_body, setdashboard_body] = useState(<Dashboard/>);
@@ -27,15 +25,13 @@ const Adminhome = () => {
         <div className="admintextpanel">Admin</div>
         <div className="sidebartabs" onClick={()=>{setdashboard_body(<Dashboard/>)}}>Dashboard</div>
         <div className="sidebartabs" onClick={()=>{setdashboard_body(<Bookings/> )}}>Bookings</div>
-        <div className="sidebartabs" onClick={()=>{setdashboard_body(<Study/> )}}>Study(Only for website)</div>
         <div className="sidebartabs" onClick={()=>{setdashboard_body(<Categories/> )}}>Categories</div>
-        <div className="sidebartabs" onClick={()=>{setdashboard_body(<Addons/> )}}>Add-ons</div>
-        <div className="sidebartabs" onClick={()=>{setdashboard_body(<Items/> )}}>items</div>
-        <div className="sidebartabs" onClick={()=>{setdashboard_body(<Banners/> )}}>Banners</div>
         <div className="sidebartabs" onClick={()=>{setdashboard_body(<Delivery/> )}}>Delivery Zone</div>
         <div className="sidebartabs" onClick={()=>{setdashboard_body(<Orders/> )}}>Orders</div>
-        <div className="sidebartabs" onClick={()=>{setdashboard_body(<Review/> )}}>Reviews</div>
-        <div className="sidebartabs" onClick={()=>{setdashboard_body(<Payment/> )}}>Payment methods</div>
+        <div className="sidebartabs" onClick={()=>{setdashboard_body(<Notifications/> )}}>Notifications(only for mobile app)</div>
+        <div className="sidebartabs" onClick={()=>{setdashboard_body(<Promocodes/> )}}>Promocodes</div>
+        <div className="sidebartabs" onClick={()=>{setdashboard_body(<Report/> )}}>Report</div>
+        <div className="sidebartabs" onClick={()=>{setdashboard_body(<Review/> )}}>Review</div>
       </div>
       <div className="dashboardbody">
         <div className="navbar">
